@@ -1,0 +1,101 @@
+
+.hero {
+  background-color: var(--second-background-color);
+  padding: 200px 0;
+}
+
+.hero--overlay {
+  max-width: 1600px;
+  min-height: 600px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, var(--hero-image-backdrop), var(--hero-image-backdrop));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero--overlay {
+  background-image: url("/images/hero/hero_img.jpg");
+}
+
+@media (min-resolution: 2dppx) {
+  .hero--overlay {
+    background-image: url("/images/hero/hero-img-mob-x2.jpg");
+  }
+}
+
+@media (min-width: 489px) {
+  .hero--overlay {
+    background-image: url("/images/hero/hero-img-tab-x1.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .hero--overlay {
+      background-image: url("/images/hero/hero-img-tab-x2.jpg");
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero--overlay {
+    background-image:url("/images/hero/hero_img.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .hero--overlay {
+      background-image: url("/images/hero/hero_img-x2.jpg");
+    }
+  }
+}
+
+.hero__title {
+  @media screen and (max-width:1199px) {
+    font-size: 26px;
+    line-height: 1.6;
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  color: var(--main-background-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @media screen and (min-width:1200px) {
+    width: 696px;
+    margin: 0 auto 30px auto;
+  }
+
+  
+}
+
+.hero__btn {
+  cursor: pointer;
+
+  background-color: var(--comon-blue);
+  color: var(--main-background-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  display: block;
+  margin: 0 auto;
+  padding: 10px 32px;
+  border: 0;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  transition: background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+  background-color: var(--active-blue);
+}
