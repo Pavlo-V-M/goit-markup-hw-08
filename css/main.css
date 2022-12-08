@@ -449,32 +449,32 @@ img {
 }
 
 .hero--overlay {
-  background-image: url("/images/hero/hero_img.jpg");
+  background-image: url("../images/hero/hero_img.jpg");
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .hero--overlay {
-    background-image: url("/images/hero/hero-img-mob-x2.jpg");
+    background-image: url("../images/hero/hero-img-mob-x2.jpg");
   }
 }
 @media (min-width: 489px) {
   .hero--overlay {
-    background-image: url("/images/hero/hero-img-tab-x1.jpg");
+    background-image: url("../images/hero/hero-img-tab-x1.jpg");
   }
 }
 @media (min-width: 489px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 489px) and (min-resolution: 2dppx) {
   .hero--overlay {
-    background-image: url("/images/hero/hero-img-tab-x2.jpg");
+    background-image: url("../images/hero/hero-img-tab-x2.jpg");
   }
 }
 @media (min-width: 1200px) {
   .hero--overlay {
-    background-image: url("/images/hero/hero_img.jpg");
+    background-image: url("../images/hero/hero_img.jpg");
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero--overlay {
-    background-image: url("/images/hero/hero_img-x2.jpg");
+    background-image: url("../images/hero/hero_img-x2.jpg");
   }
 }
 .hero__title {
