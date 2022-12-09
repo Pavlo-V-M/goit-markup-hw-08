@@ -137,6 +137,16 @@
   pointer-events: none;
 
   transition: opacity 250ms ease;
+
+  @media screen and (max-width:1199px) {
+    left: 17px;
+  }
+}
+
+.modal-checkbox__label {
+  @media screen and (max-width:1199px) {
+    font-size: 12px;
+  }
 }
 
 .modal-checkbox__agreement {

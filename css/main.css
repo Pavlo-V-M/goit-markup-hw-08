@@ -180,12 +180,12 @@ img {
   border: none;
   background-color: transparent;
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 767px) {
   .head__btn {
     display: none;
   }
 }
-.head__btn:hover, .head__btn :focus {
+.head__btn:hover, .head__btn:focus {
   fill: var(--comon-blue);
 }
 
@@ -449,7 +449,7 @@ img {
 }
 
 .hero--overlay {
-  background-image: url("../images/hero/hero_img.jpg");
+  background-image: url("../images/hero/hero-img-mob-x1.jpg");
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
@@ -457,12 +457,12 @@ img {
     background-image: url("../images/hero/hero-img-mob-x2.jpg");
   }
 }
-@media (min-width: 489px) {
+@media (min-width: 681px) {
   .hero--overlay {
     background-image: url("../images/hero/hero-img-tab-x1.jpg");
   }
 }
-@media (min-width: 489px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 489px) and (min-resolution: 2dppx) {
+@media (min-width: 681px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 681px) and (min-resolution: 2dppx) {
   .hero--overlay {
     background-image: url("../images/hero/hero-img-tab-x2.jpg");
   }
@@ -534,6 +534,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
   background-color: var(--hero-modal-backdrop);
   opacity: 1;
   -webkit-transition: background-color 250ms var(--timing-function), opacity 250ms var(--timing-function);
@@ -567,6 +568,12 @@ img {
   transition: -webkit-transform 750ms var(--timing-function);
   transition: transform 750ms var(--timing-function);
   transition: transform 750ms var(--timing-function), -webkit-transform 750ms var(--timing-function);
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
 }
 
 .modal__close {
@@ -754,6 +761,17 @@ img {
   pointer-events: none;
   -webkit-transition: opacity 250ms ease;
   transition: opacity 250ms ease;
+}
+@media screen and (max-width: 1199px) {
+  .checkbox-input__icon {
+    left: 17px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .modal-checkbox__label {
+    font-size: 12px;
+  }
 }
 
 .modal-checkbox__agreement {
@@ -996,13 +1014,13 @@ img {
   max-width: 100%;
   height: auto;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 450px) and (max-width: 768px) {
   .team__img {
     width: 450px;
     height: 460px;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__img {
     width: 354px;
     height: 374px;
@@ -1197,9 +1215,8 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 

@@ -2,7 +2,6 @@
 .base {
   background-color: var(--second-background-color);
   padding: 60px 0;
-
 }
 
 .base--container {
@@ -16,7 +15,7 @@
   @media screen and (min-width: 481px) {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   
 }

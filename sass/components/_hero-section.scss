@@ -15,7 +15,7 @@
 }
 
 .hero--overlay {
-  background-image: url("../images/hero/hero_img.jpg");
+  background-image: url("../images/hero/hero-img-mob-x1.jpg");
 }
 
 @media (min-resolution: 2dppx) {
@@ -24,7 +24,7 @@
   }
 }
 
-@media (min-width: 489px) {
+@media (min-width: 681px) {
   .hero--overlay {
     background-image: url("../images/hero/hero-img-tab-x1.jpg");
   }
@@ -57,7 +57,6 @@
     margin-right: auto;
   }
 
-
   color: var(--main-background-color);
   font-weight: 900;
   font-size: 44px;
@@ -70,8 +69,6 @@
     width: 696px;
     margin: 0 auto 30px auto;
   }
-
-  
 }
 
 .hero__btn {
